@@ -1,3 +1,5 @@
+package com.beginning_spring.chapter3;
+
 import java.util.Objects;
 import java.util.StringJoiner;
 

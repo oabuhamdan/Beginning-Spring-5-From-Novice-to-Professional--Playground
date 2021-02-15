@@ -1,9 +1,11 @@
+package com.beginning_spring.chapter3;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public abstract class AbstractMusicService implements MusicService, Resettable {
-    private Map<String, Artist> bands = new HashMap<>();
+    private final Map<String, Artist> bands = new HashMap<>();
 
     protected String transformArtist(String input) {
         return input;

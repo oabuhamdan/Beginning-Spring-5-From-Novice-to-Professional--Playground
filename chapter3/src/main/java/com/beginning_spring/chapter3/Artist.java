@@ -1,3 +1,5 @@
+package com.beginning_spring.chapter3;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;

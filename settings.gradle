@@ -1,7 +1,6 @@
 rootProject.name = 'Beginning Spring'
 // add inclusions as the chapter sources are followed
 include 'chapter3'
-include 'chapter3'
 include 'chapter4'
 include 'chapter5'
 include 'chapter5common'
