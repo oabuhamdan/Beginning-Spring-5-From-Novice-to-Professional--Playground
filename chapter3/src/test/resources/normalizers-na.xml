@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- chapter3/src/test/resources/normalizers.xml -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bar" class="com.beginning_spring.chapter3.mem03.SimpleNormalizer"/>
+    <bean id="foo" class="com.beginning_spring.chapter3.mem03.CapLeadingNormalizer"/>
+</beans>
