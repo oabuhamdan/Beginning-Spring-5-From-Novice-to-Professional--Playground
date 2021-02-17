@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- chapter4/src/test/resources/config.xml -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    note that "singleton" scope is the default, so this declaration is unnecessary.
+    -->
+    <bean name="firstObject" class="com.beginning_spring.chapter4.FirstObject"/>
+
+    <bean name="firstObject2" class="com.beginning_spring.chapter4.FirstObject" scope="prototype"/>
+
+    <bean name="secondObject" class="com.beginning_spring.chapter4.SecondObject">
+        <constructor-arg name="initialValue" value="Initial Value"/>
+    </bean>
+
+    <bean name="thirdObject" class="com.beginning_spring.chapter4.ThirdObject" init-method="init"
+          destroy-method="dispose"/>
+
+    <bean name="fourthObject" class="com.beginning_spring.chapter4.FourthObject"/>
+</beans>
